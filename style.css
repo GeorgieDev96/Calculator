@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(-45deg, #ee7752, #e73c75, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    position: relative;
+}
+.container
+{
+    position: relative;
+    background: rgba(255, 0, 0, 0.562);
+    border-radius: 6px;
+    overflow: hiddendown;
+    z-index: 10; 
+    backdrop-filter: blur(15px);
+    border-top: 1px solid rgb(247, 243, 243);
+    border-left: 1px solid rgb(255, 255, 255);
+    box-shadow: 5px 5px 30px rgb(0, 0, 0);
+}
+.container .calculator 
+{
+    position: relative;
+    display: grid;
+}
+.container .calculator .value 
+{
+    grid-column: span 4;
+    height: 140px;
+    width: 300px;
+    text-align: right;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 30px;
+    background: transparent;
+    color: rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(255, 255, 255);
+    border-right: 2px solid rgb(255, 255, 255);
+    transition: 0.5s;
+}
+.container .calculator span
+{
+  display: grid;
+  place-items: center;
+  width: 75px;
+  height: 75px;
+  color: #fff;
+  font-weight: 400;
+  cursor: pointer;
+  font-size: 20px;
+  user-select: none; 
+  border-bottom: 2px solid rgb(255, 255, 255);
+  border-right: 2px solid rgb(255, 255, 255);
+}
+.container .calculator span:hover
+{
+   transition: 0s;
+   background: rgba(255, 255, 255, 0.05)
+}
+.container .calculator span:active
+{
+    background: #01f7ff;
+    color: #16002f;
+    font-size: 25px;
+    font-weight: 500;
+}
+.container .calculator .clear
+{
+    grid-column: span 2;
+    width: 150px;
+    background: rgba(255, 255, 255, 0.05);
+}
+.container .calculator .plus
+{
+    grid-row: span 2;
+    height: 150px;
+}
+.equal 
+{
+    background: rgba(255, 255, 255, 0.05);
+}
